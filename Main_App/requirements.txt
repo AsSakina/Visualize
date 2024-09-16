@@ -196,5 +196,4 @@ wordcloud==1.9.3
 wrapt==1.16.0
 xgboost==1.7.6
 xyzservices==2024.4.0
-ydata-profiling @ https://github.com/pandas-profiling/pandas-profiling/archive/master.zip#sha256=37cfa9d710b35795673f639d5aa4c8208266bfdc1c80c355bbe969242a424653
 zipp==3.16.2
