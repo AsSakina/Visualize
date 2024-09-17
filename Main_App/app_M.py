@@ -155,9 +155,11 @@ st.markdown("# Mental Health Disorders Analysis")
 #########################################
 #SIDEBAR
 #########################################
-
+# URL de l'image
+image_url = 'im.jpg'
+im = st.image(image_url)
 #Sidebar 
-st.sidebar.image('im.jpg', caption='Mental Health Disorders Trends') #ADD IMAGE OR LOGO TO SIDEBAR 
+st.sidebar.image(im, caption='Mental Health Disorders Trends') #ADD IMAGE OR LOGO TO SIDEBAR 
 
 # Switchers
 all_years = ["All"] + list(data['Year'].unique())
