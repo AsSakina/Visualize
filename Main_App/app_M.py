@@ -345,7 +345,7 @@ make_bar_1(data)
 def make_bar_2(data):
     st.markdown('#### Mental Health Disorders in Regions')
     #Load Second Dataset
-    dataset = pd.read_csv('continents2.csv')
+    dataset = pd.read_csv('Main_App/continents2.csv')
     #Keep necessary columns only and rename
     continent = dataset[['region', 'sub-region', 'name']]
     continent = dataset.rename(columns = {'name': 'Entity'})
