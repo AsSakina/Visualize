@@ -52,9 +52,25 @@ st.markdown("""
 #########################################
 #DATA EXPLORER
 #########################################
+#import streamlit as st
+import pandas as pd
+import requests
+import io
 
+# URL du fichier CSV
+file_url = 'https://drive.google.com/uc?export=download&id=1amQ77JbBVBliMY4tffkSm9jkVZ0-uv5l'
+
+# Télécharger le fichier
+response = requests.get(file_url)
+dataset = io.StringIO(response.text)
+
+# Lire le CSV dans un DataFrame
+data = pd.read_csv(dataset, on_bad_lines='warn')
+
+# Utiliser le DataFrame dans ton application Streamlit
+#st.write(df)
 #Load our Dataset
-data = pd.read_csv('Mental health Depression disorder Data 3.csv')
+#data = pd.read_csv('Mental health Depression disorder Data 3.csv')
 
 #Informations of our dataset
 data.info()
