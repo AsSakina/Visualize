@@ -315,7 +315,7 @@ make_choropleth(data, selected_year, selected_disorder, selected_color_theme)
 def make_bar_1(data):
     st.markdown('#### Mental Health Disorders in selected Entities')
     #Load Second Dataset
-    dataset = pd.read_csv('continents2.csv')
+    dataset = pd.read_csv('Main_App/continents2.csv')
     #Keep necessary columns only and rename
     continent = dataset[['region', 'sub-region', 'name']]
     continent = dataset.rename(columns = {'name': 'Entity'})
