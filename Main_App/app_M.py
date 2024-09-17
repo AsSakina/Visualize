@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import plotly as py
-import streamlit as st
+import streamlit as st 
 import query
 import altair as alt
 from streamlit_option_menu import option_menu 
